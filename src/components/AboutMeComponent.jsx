@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Container, Image, Row } from "react-bootstrap";
 
 const AboutMeComponent = () => {
   return (
@@ -14,7 +14,7 @@ const AboutMeComponent = () => {
           </Col>
           <Col className="about-me-text">
             <Row className="flex-column">
-              <h1 className="about-me">About Me</h1>
+              <h2 className="about-me">About Me</h2>
               <div className="info-text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
                 magni ipsa, quisquam autem corrupti dolores placeat nesciunt

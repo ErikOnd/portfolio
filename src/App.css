@@ -17,6 +17,10 @@
   pointer-events: none;
 }
 
+h2 {
+  font-size: 45px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -131,8 +135,8 @@
 
 .info-text {
   font-size: var(--font-size);
-  margin-left: 60px;
-  margin-top: 25px;
+  padding-left: 60px;
+  margin-top: 10px;
   max-width: 1000px;
   padding-right: 60px;
 }
@@ -143,7 +147,7 @@
 
 .download-cv {
   margin-left: 60px;
-  margin-top: 35px;
+  margin-top: 20px;
   background-color: rgb(40 44 52);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-inline: 20px;
@@ -200,5 +204,16 @@
   }
   .main-text {
     font-size: 50px;
+  }
+  .about-me {
+    margin-inline: 20px;
+  }
+
+  .download-cv {
+    margin-inline: 20px;
+  }
+
+  .info-text {
+    padding-inline: 20px;
   }
 }

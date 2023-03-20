@@ -4,6 +4,7 @@ import "./App.css";
 import NavComponent from "./components/NavComponent";
 import MainComponent from "./components/MainComponent";
 import AboutMeComponent from "./components/AboutMeComponent";
+import SkillsComponent from "./components/SkillsComponent";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavComponent></NavComponent>
       <MainComponent></MainComponent>
       <AboutMeComponent></AboutMeComponent>
+      <SkillsComponent></SkillsComponent>
     </div>
   );
 }
