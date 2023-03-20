@@ -132,17 +132,18 @@
 .info-text {
   font-size: var(--font-size);
   margin-left: 60px;
-  margin-top: 40px;
+  margin-top: 25px;
   max-width: 1000px;
+  padding-right: 60px;
 }
 
 .about-me {
-  margin-top: 30px;
+  margin-top: 51px;
 }
 
 .download-cv {
   margin-left: 60px;
-  margin-top: 40px;
+  margin-top: 35px;
   background-color: rgb(40 44 52);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding-inline: 20px;
@@ -152,7 +153,21 @@
   cursor: pointer;
 }
 
-@media (max-width: 1300px) {
+.code-snipped-div {
+  display: flex;
+  height: 400px;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+@media (max-width: 1200px) {
   .align-items-center.row {
     flex-direction: column;
   }
@@ -164,9 +179,22 @@
   .text-holder {
     text-align: center;
   }
+
+  .about-me {
+    margin-left: 60px;
+  }
+
+  .me-emoji-div {
+    max-width: 100%;
+  }
+
+  .me-emoji-div {
+    display: flex;
+    justify-content: center;
+  }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .code-snipped {
     display: none;
   }

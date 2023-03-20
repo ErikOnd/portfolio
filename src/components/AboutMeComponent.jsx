@@ -4,7 +4,7 @@ import { Button, Col, Container, Image, Row } from "react-bootstrap";
 const AboutMeComponent = () => {
   return (
     <div>
-      <Container>
+      <Container className="mt-5">
         <Row className="align-items-center">
           <Col className="d-flex align-content-start me-emoji-div">
             <Image
@@ -12,7 +12,7 @@ const AboutMeComponent = () => {
               alt="me-emoji"
             ></Image>
           </Col>
-          <Col className="text-left">
+          <Col className="about-me-text">
             <Row className="flex-column">
               <h1 className="about-me">About Me</h1>
               <div className="info-text">
