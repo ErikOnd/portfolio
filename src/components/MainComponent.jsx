@@ -4,7 +4,7 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 const MainComponent = () => {
   return (
     <Container>
-      <Row className="align-items-center">
+      <Row className="align-items-center main-holder">
         <Col className="text-holder pr-0">
           <span className="upper-main">Welcome to my portfolio</span>
           <h1 className="main-text">Hey! I'm a Full Stack Web Developer</h1>

@@ -4,12 +4,14 @@ import { Col, Container, Image, Row } from "react-bootstrap";
 const AboutMeComponent = () => {
   return (
     <div>
-      <Container className="mt-5">
+      <Container className="mt-5 about-me-container">
         <Row className="align-items-center">
           <Col className="d-flex align-content-start me-emoji-div">
             <Image
-              src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679234383/portfolio/IMG_5291_u7ymg1.png"
-              alt="me-emoji"
+              src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679731256/portfolio/me-img_jxqazk.png"
+              alt="me-img"
+              className="me-img"
+              fluid
             ></Image>
           </Col>
           <Col className="about-me-text">
@@ -21,9 +23,7 @@ const AboutMeComponent = () => {
                 earum facilis mollitia laborum porro similique asperiores
                 voluptatibus. A quia soluta iste sunt, aut incidunt facere
                 explicabo aspernatur quod magnam earum atque, fugit non
-                provident! Eum beatae alias nam praesentium maiores consectetur
-                consequuntur mollitia commodi, voluptas corporis temporibus
-                dicta dolore ratione!
+                provident!
               </div>
             </Row>
             <Row>
