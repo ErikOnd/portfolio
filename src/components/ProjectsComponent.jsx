@@ -11,7 +11,7 @@ const ProjectsComponent = () => {
       <Row className="justify-content-center m-0">
         <div className="info-text">
           <a href="https://github.com/ErikOnd?tab=repositories">
-            My GitHub Reposetories
+            My GitHub Repositories
             {/* display images here */}
           </a>
         </div>
