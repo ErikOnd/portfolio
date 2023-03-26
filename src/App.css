@@ -136,7 +136,7 @@ h2 {
   font-size: var(--font-size);
   padding-left: 60px;
   margin-top: 10px;
-  max-width: 1000px;
+
   padding-right: 60px;
 }
 
@@ -185,6 +185,18 @@ h2 {
 }
 .align-items-center.row {
   margin-bottom: 100px;
+}
+
+.mail-logo {
+  max-height: 400px;
+}
+
+.contact-form {
+  background-color: rgb(40 44 52);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 30px;
+  font-size: var(--font-size);
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
