@@ -9,7 +9,7 @@ const SkillsComponent = () => {
           <h2 className="mt-3 mb-5">Skills</h2>
         </Col>
       </Row>
-      <Row xs={2} md={3} xl={3} className="justify-content-center">
+      <Row xs={2} md={3} xl={5} className="justify-content-center">
         <Col className="skill-logo">
           <Image
             src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679382531/portfolio/logos/htmlLogo_ksuzuh.png"
@@ -20,21 +20,28 @@ const SkillsComponent = () => {
         <Col className="skill-logo">
           <Image
             src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679733728/portfolio/logos/pngwing.com_fg7bl2.png"
-            alt="html img"
+            alt="css img"
             className="skills-img"
           ></Image>
         </Col>
         <Col className="skill-logo">
           <Image
             src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679733808/portfolio/logos/pngwing.com_1_lln9dq.png"
-            alt="html img"
+            alt="bootstrap img"
             className="skills-img"
           ></Image>
         </Col>
         <Col className="skill-logo">
           <Image
             src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679382532/portfolio/logos/jsLogo_y1lsre.png"
-            alt="html img"
+            alt="js img"
+            className="skills-img"
+          ></Image>
+        </Col>
+        <Col className="skill-logo">
+          <Image
+            src="https://res.cloudinary.com/dyy38u8x7/image/upload/v1679818984/portfolio/pngwing.com_3_h0jhke.png"
+            alt="ts img"
             className="skills-img"
           ></Image>
         </Col>
