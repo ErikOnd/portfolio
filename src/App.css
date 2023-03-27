@@ -175,8 +175,8 @@ h2 {
   padding: 20px;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  width: 200px;
-  height: 200px;
+  max-width: 150px;
+  height: 150px;
   object-fit: cover;
 }
 
@@ -243,6 +243,10 @@ h2 {
     display: none;
   }
 
+  .code-snipped-div {
+    display: none;
+  }
+
   .me-img.img-fluid {
     margin-bottom: 50px;
   }
@@ -254,9 +258,13 @@ h2 {
   .about-me {
     margin-inline: 20px;
   }
+  .upper-main {
+    font-size: 25px;
+  }
 
   .main-text {
-    font-size: 50px;
+    margin-top: 20px;
+    font-size: 40px;
   }
 
   .download-cv {
