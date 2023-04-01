@@ -211,7 +211,7 @@ h2 {
   }
 
   .me-img {
-    max-width: 50%;
+    max-width: 40%;
   }
 
   .main-text {
@@ -246,6 +246,14 @@ h2 {
 @media (max-width: 768px) {
   .code-snipped {
     display: none;
+  }
+
+  .me-img {
+    max-width: 60%;
+  }
+
+  .info-text {
+    font-size: 1rem;
   }
 
   .mail-logo {
