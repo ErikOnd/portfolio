@@ -3,14 +3,20 @@ import { Col, Row, Form, Button, Container, Image } from "react-bootstrap";
 import { useState } from "react";
 
 const ContactComponent = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
+  const [contactInfo, setContactinfo] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+  const handleSubmit = (e) => {};
+
+  const handleContactInfoChange = (field, value) => {
+    setContactinfo({
+      ...contactInfo,
+      [field]: value,
+    });
   };
 
   return (
@@ -38,8 +44,10 @@ const ContactComponent = () => {
                 <Form.Control
                   type="text"
                   placeholder="Enter your name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={contactInfo.name}
+                  onChange={(e) =>
+                    handleContactInfoChange("name", e.target.value)
+                  }
                 />
               </Form.Group>
 
@@ -48,8 +56,10 @@ const ContactComponent = () => {
                 <Form.Control
                   type="email"
                   placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={contactInfo.email}
+                  onChange={(e) =>
+                    handleContactInfoChange("email", e.target.value)
+                  }
                 />
               </Form.Group>
 
@@ -58,8 +68,10 @@ const ContactComponent = () => {
                 <Form.Control
                   type="email"
                   placeholder="Enter your email"
-                  value={subject}
-                  onChange={(e) => setSubject(e.target.value)}
+                  value={contactInfo.subject}
+                  onChange={(e) =>
+                    handleContactInfoChange("subject", e.target.value)
+                  }
                 />
               </Form.Group>
 
@@ -69,8 +81,10 @@ const ContactComponent = () => {
                   as="textarea"
                   rows={3}
                   placeholder="Enter your message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  value={contactInfo.message}
+                  onChange={(e) =>
+                    handleContactInfoChange("message", e.target.value)
+                  }
                 />
               </Form.Group>
 
