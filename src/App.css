@@ -204,19 +204,6 @@ h2 {
   width: 100%;
 }
 
-/* .hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1s;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-} */
-
 .skill-logo:nth-child(2) {
   transition-delay: 200ms;
 }
@@ -296,10 +283,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-  .skills-img {
-    max-width: 100px;
-    height: 100px;
-  }
   .code-snipped {
     display: none;
   }
@@ -350,5 +333,20 @@ h2 {
 
   .info-text {
     padding-inline: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
   }
 }
