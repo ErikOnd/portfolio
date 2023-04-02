@@ -245,6 +245,17 @@ h2 {
   transition-delay: 1800ms;
 }
 
+.about-me-container {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.about-me-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (max-width: 1200px) {
   .align-items-center.row {
     flex-direction: column;

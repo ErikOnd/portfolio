@@ -1,10 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Image, Row } from "react-bootstrap";
 
 const AboutMeComponent = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = React.useRef();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(ref.current);
+        }
+      },
+      {
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    observer.observe(ref.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
   return (
     <div>
-      <Container className="mt-5 about-me-container">
+      <Container
+        className={`mt-5 about-me-container ${isVisible ? "fade-in" : ""}`}
+        ref={ref}
+      >
         <Row className="align-items-center">
           <Col className="d-flex align-content-start me-emoji-div">
             <Image
