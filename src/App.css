@@ -296,6 +296,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  .skills-img {
+    max-width: 100px;
+    height: 100px;
+  }
   .code-snipped {
     display: none;
   }
